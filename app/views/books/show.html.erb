@@ -1,0 +1,16 @@
+
+<main>
+    <section class="book-box">
+      <strong>
+          Title:
+         <%= @book.title %>
+      </strong>
+
+      <strong>
+          Body:
+         <%= @book.body %>
+      </strong>`
+    </section>
+    <%= link_to "Edit", edit_book_path(@book) %>
+    <%= link_to "Back", books_path(@books) %>
+</main>
